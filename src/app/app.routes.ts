@@ -1,10 +1,12 @@
 import { Routes } from '@angular/router';
-import { FooterComponent } from './componets/footer/footer.component';
-import { NavbarComponent } from './componets/navbar/navbar.component';
-import { HomeComponent } from './componets/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 export const routes: Routes = [
     { path: 'footer', component: FooterComponent},
     { path: 'navbar', component: NavbarComponent},
-    { path: 'home', component: HomeComponent}
+    { path: 'home', component: HomeComponent},
+    { path: 'carousel', component: CarouselComponent}
 ];
