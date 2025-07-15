@@ -1,0 +1,12 @@
+.offer-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.1);
+}
+
+.badge {
+  font-size: 0.9rem;
+}
