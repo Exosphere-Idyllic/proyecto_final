@@ -2,12 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
-import { CarouselComponent } from '../carousel/carousel.component';
-import { OffersComponent } from '../offers/offers.component';
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, FooterComponent, CarouselComponent, OffersComponent],
+  imports: [NavbarComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

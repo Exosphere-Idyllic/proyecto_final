@@ -1,12 +1,58 @@
+:root {
+  --brand-purple: #6a0dad;
+  --brand-light-purple: #9b4dff;
+  --brand-dark-purple: #4b0082;
+  --brand-gray-light: #f5f5f5;
+}
+
+.text-brand-purple {
+  color: var(--brand-purple);
+}
+
+.btn-outline-brand {
+  border: 1px solid var(--brand-purple);
+  color: var(--brand-purple);
+  font-weight: 500;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  transition: 0.3s ease;
+}
+
+.btn-outline-brand:hover {
+  background-color: var(--brand-purple);
+  color: white;
+}
+
 .offer-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: white;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .offer-card:hover {
-  transform: scale(1.015);
-  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
-.badge {
-  font-size: 0.9rem;
+.offer-img {
+  width: 180px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .offer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offer-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .btn-outline-brand {
+    align-self: center;
+  }
 }

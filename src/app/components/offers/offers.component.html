@@ -1,32 +1,91 @@
-<div class="container py-4">
-  <h2 class="text-center mb-4 text-danger fw-bold">🔥 Ofertas Destacadas</h2>
-
+<app-navbar></app-navbar>
+<app-carousel></app-carousel>
+<section class="offers-container container py-5">
+  <h2 class="text-center mb-4 text-brand-purple fw-bold">Ofertas Especiales</h2>
   <div class="row g-4">
-    <div class="col-12 col-sm-6 col-md-4" *ngFor="let offer of offers">
-      <div class="card h-100 shadow-sm offer-card border-0 rounded-4">
-        <div class="position-relative">
-          <img [src]="offer.image" [alt]="offer.name"
-                class="card-img-top rounded-top-4 img-fluid" style="height: 220px; object-fit: cover;" />
-          <span class="badge bg-danger position-absolute top-0 start-0 m-2 rounded-pill px-3">
-            -{{ offer.discount }}%
-          </span>
-        </div>
-
-        <div class="card-body d-flex flex-column">
-          <h5 class="fw-semibold">{{ offer.name }}</h5>
-          <p class="text-muted small mb-2">{{ offer.description }}</p>
-
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <div>
-              <span class="text-danger fw-bold fs-5">${{ offer.price }}</span>
-              <span class="text-muted text-decoration-line-through ms-1">${{ offer.oldPrice }}</span>
-            </div>
-            <button class="btn btn-sm btn-outline-danger rounded-pill px-3">
-              <i class="bi bi-cart-plus me-1"></i> Comprar
-            </button>
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="offer-card d-flex flex-column flex-md-row shadow-sm rounded-4 overflow-hidden">
+        <img src="assets/imges/slide1.webp" alt="Oferta 1" class="offer-img">
+        <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <div class="offer-price fw-bold fs-4 text-brand-purple">$199.99</div>
+            <h5 class="offer-title fw-semibold mt-1">Smart TV 4K 55”</h5>
+            <p class="offer-desc small text-muted">Pantalla UHD, control por voz y streaming integrado.</p>
           </div>
+          <button class="btn btn-outline-brand mt-auto align-self-start">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="offer-card d-flex flex-column flex-md-row shadow-sm rounded-4 overflow-hidden">
+        <img src="assets/imges/offer2.webp" alt="Oferta 2" class="offer-img">
+        <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <div class="offer-price fw-bold fs-4 text-brand-purple">$59.99</div>
+            <h5 class="offer-title fw-semibold mt-1">Freidora de Aire</h5>
+            <p class="offer-desc small text-muted">Cocina saludable con poco aceite, fácil de limpiar.</p>
+          </div>
+          <button class="btn btn-outline-brand mt-auto align-self-start">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="offer-card d-flex flex-column flex-md-row shadow-sm rounded-4 overflow-hidden">
+        <img src="assets/imges/offer3.webp" alt="Oferta 3" class="offer-img">
+        <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <div class="offer-price fw-bold fs-4 text-brand-purple">$89.99</div>
+            <h5 class="offer-title fw-semibold mt-1">Licuadora Pro</h5>
+            <p class="offer-desc small text-muted">Motor potente de 1200W, cuchillas de acero inoxidable.</p>
+          </div>
+          <button class="btn btn-outline-brand mt-auto align-self-start">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="offer-card d-flex flex-column flex-md-row shadow-sm rounded-4 overflow-hidden">
+        <img src="assets/imges/offer4.webp" alt="Oferta 4" class="offer-img">
+        <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <div class="offer-price fw-bold fs-4 text-brand-purple">$24.99</div>
+            <h5 class="offer-title fw-semibold mt-1">Plancha a vapor</h5>
+            <p class="offer-desc small text-muted">Desarruga tu ropa en minutos con tecnología antiadherente.</p>
+          </div>
+          <button class="btn btn-outline-brand mt-auto align-self-start">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="offer-card d-flex flex-column flex-md-row shadow-sm rounded-4 overflow-hidden">
+        <img src="assets/imges/offer5.webp" alt="Oferta 5" class="offer-img">
+        <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <div class="offer-price fw-bold fs-4 text-brand-purple">$129.99</div>
+            <h5 class="offer-title fw-semibold mt-1">Aspiradora Inalámbrica</h5>
+            <p class="offer-desc small text-muted">Batería duradera, filtro HEPA, ideal para mascotas.</p>
+          </div>
+          <button class="btn btn-outline-brand mt-auto align-self-start">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="offer-card d-flex flex-column flex-md-row shadow-sm rounded-4 overflow-hidden">
+        <img src="assets/imges/offer4.webp" alt="Oferta 4" class="offer-img">
+        <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <div class="offer-price fw-bold fs-4 text-brand-purple">$24.99</div>
+            <h5 class="offer-title fw-semibold mt-1">Plancha a vapor</h5>
+            <p class="offer-desc small text-muted">Desarruga tu ropa en minutos con tecnología antiadherente.</p>
+          </div>
+          <button class="btn btn-outline-brand mt-auto align-self-start">Ver más</button>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+<app-footer></app-footer>
