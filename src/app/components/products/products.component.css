@@ -64,6 +64,37 @@
   font-size: 0.95rem;
   color: #8584AF;
 }
+/* Botón de compra oculto inicialmente */
+.buy-overlay {
+  display: none;
+  margin-top: 1rem;
+  text-align: right;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 2.6s ease, transform 2.6s ease;
+}
+
+/* Mostrar suavemente al hacer hover */
+.product-card:hover .buy-overlay {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo del botón */
+.btn-buy {
+  background-color: #686BC4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.4s ease;
+}
+
+.btn-buy:hover {
+  background-color: #8584AF;
+}
 
 /* Responsive */
 @media (max-width: 992px) {
