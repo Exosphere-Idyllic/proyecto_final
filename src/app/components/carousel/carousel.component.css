@@ -1,11 +1,17 @@
-
+.carousel-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
 
 @media (max-width: 768px) {
-  .carousel-slide {
-    height: 180px;
+  .carousel-img {
+    max-height: 300px;
   }
+}
 
   .carousel-btn {
     font-size: 1.5rem;
   }
-}
