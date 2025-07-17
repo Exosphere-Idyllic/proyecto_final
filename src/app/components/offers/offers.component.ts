@@ -14,7 +14,7 @@ offers = [
       price: 799.99,
       oldPrice: 999.99,
       discount: 20,
-      image: 'assets/products/fridge1.jpg'
+      image: 'assets/images/of.webp'
     },
     {
       name: 'Microondas LG Smart',
@@ -22,7 +22,7 @@ offers = [
       price: 129.99,
       oldPrice: 179.99,
       discount: 28,
-      image: 'assets/products/microwave2.jpg'
+      image: 'assets/images/microwave.webp'
     },
     {
       name: 'Aspiradora Dyson V12',
@@ -30,7 +30,7 @@ offers = [
       price: 469.00,
       oldPrice: 599.99,
       discount: 22,
-      image: 'assets/products/vacuum2.jpg'
+      image: 'assets/imges/dyson.webp'
     }
   ];
 }

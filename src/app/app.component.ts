@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { OffersComponent } from './components/offers/offers.component';
-import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, HomeComponent, OffersComponent, ProductCardComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent, OffersComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

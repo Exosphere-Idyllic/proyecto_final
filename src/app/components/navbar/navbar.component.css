@@ -1,16 +1,112 @@
-.nav-link {
-  transition: all 0.2s ease-in-out;
+/* Estilos para el Navbar de ElectroStore */
+.electro-navbar {
+    background-color: #118076; /* Mantenemos este color de fondo */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* Estilos del Brand/Logo */
+.electro-navbar .navbar-brand {
+    color: #000000; /* Color del texto del navbar: negro */
+    font-weight: 700; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-.nav-link:hover {
-  color: #0d6efd;
-  text-decoration: underline;
+/* Estilos de la barra de búsqueda */
+.electro-navbar .search-bar {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.navbar-brand img {
-  max-height: 40px;
+.electro-navbar .search-bar .form-control {
+    background-color: transparent;
+    border: none;
+    color: #000000; /* Color del texto dentro del input de búsqueda: negro */
+    padding-left: 15px; 
+    flex-grow: 1;
 }
-.btn-outline-primary:hover {
-  background-color: #0d6efd;
-  color: white;
+
+.electro-navbar .search-bar .form-control::placeholder {
+    color: #6c757d; /* Color del texto placeholder */
+}
+
+.electro-navbar .search-bar .search-btn {
+    background-color: #000000; /* Fondo del botón de búsqueda: negro */
+    border: none; 
+    color: #ffffff; /* Color del icono de la lupa: blanco */
+    padding: 0.5rem 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.electro-navbar .search-bar .search-btn:hover {
+    background-color: #6c757d; /* Fondo del botón de búsqueda al pasar el mouse: gris */
+}
+
+/* Estilos de los enlaces de navegación */
+.electro-navbar .nav-link {
+    color: #000000; /* Color de los enlaces de navegación: negro */
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem 1rem;
+}
+
+.electro-navbar .nav-link.active, /* Enlace activo */
+.electro-navbar .nav-link:hover { /* Enlace al pasar el mouse */
+    color: #ffffff; /* Color blanco al activarse o pasar el mouse (para contraste con el fondo) */
+}
+
+/* Estilos del icono del carrito de compras */
+.electro-navbar .cart-icon {
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.electro-navbar .cart-icon .badge {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    font-size: 0.7em;
+    padding: 0.3em 0.6em;
+    border-radius: 50%;
+    background-color: #dc3545 !important; /* Color rojo de Bootstrap para danger */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 991.98px) { /* Para dispositivos medianos y pequeños (ej. tablets, móviles) */
+    .electro-navbar .navbar-toggler {
+        /* Asegura que el toggler tenga un buen color en el fondo oscuro */
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    .electro-navbar .navbar-toggler-icon {
+        /* Para hacer el icono del toggler más visible si es necesario */
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .electro-navbar .search-bar {
+        width: 100%; /* La barra de búsqueda ocupa todo el ancho */
+        max-width: none; /* Elimina el límite de ancho */
+        margin-top: 15px; /* Margen superior cuando está apilado */
+        margin-bottom: 15px; /* Margen inferior cuando está apilado */
+    }
+
+    .electro-navbar .navbar-nav {
+        text-align: center; /* Centra los elementos de navegación en móviles */
+    }
+    .electro-navbar .nav-item {
+        margin: 5px 0; /* Espacio vertical entre los elementos de navegación */
+    }
+    .electro-navbar .nav-link {
+        padding: 8px 0; /* Relleno vertical para hacer los enlaces más grandes al tocar */
+    }
+}
+
+@media (max-width: 767.98px) { /* Para dispositivos muy pequeños (móviles) */
+    .electro-navbar .navbar-brand span {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente del brand */
+    }
 }

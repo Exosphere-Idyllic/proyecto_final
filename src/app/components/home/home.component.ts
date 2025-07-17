@@ -3,12 +3,11 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CarouselComponent } from '../carousel/carousel.component';
-import { ProductCardComponent } from '../product-card/product-card.component';
 import { OffersComponent } from '../offers/offers.component';
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, FooterComponent, CarouselComponent, ProductCardComponent, OffersComponent],
+  imports: [NavbarComponent, FooterComponent, CarouselComponent, OffersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,12 +1,111 @@
-footer a:hover {
-  color: #ffffff !important;
-  text-decoration: underline;
+/*Footer Css*/
+
+.footer-electrostore {
+    background-color: var(--footer-bg-color);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: var(--footer-text-color);
 }
 
-footer i {
-  transition: transform 0.2s ease-in-out;
+.footer-electrostore .footer-logo-link { 
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
-footer i:hover {
-  transform: scale(1.2);
+.footer-electrostore .footer-logo {
+    max-width: 150px;
+    height: auto;
+    filter: invert(100%) brightness(1.8);
+}
+
+.footer-electrostore h5 {
+    color: var(--footer-heading-color);
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.05em;
+}
+
+.footer-electrostore ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.footer-electrostore ul li {
+    margin-bottom: 8px;
+}
+
+.footer-electrostore ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-electrostore .footer-link {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-electrostore .footer-link:hover {
+    color: var(--footer-heading-color);
+    text-decoration: underline;
+}
+
+.footer-electrostore .footer-contact-item {
+    color: var(--footer-text-color);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-electrostore .footer-contact-item i {
+    color: var(--footer-text-color);
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* Estilo para la línea horizontal divisoria (sin cambios aquí) */
+.footer-electrostore .footer-divider {
+    border-color: var(--footer-divider-color) !important;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.footer-electrostore .footer-copyright-text {
+    font-size: 0.85rem;
+    color: var(--footer-copyright-color) !important;
+}
+
+/* Media Queries para Footer (Responsividad) */
+@media (max-width: 767.98px) {
+    .footer-electrostore .col-md-4 {
+        text-align: center !important;
+        margin-bottom: 30px;
+    }
+
+    .footer-electrostore .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-electrostore ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-electrostore {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+
+    .footer-electrostore h5 {
+        font-size: 1.2rem;
+    }
+
+    .footer-electrostore .footer-logo {
+        max-width: 120px;
+    }
 }

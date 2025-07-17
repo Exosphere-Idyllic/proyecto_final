@@ -1,0 +1,401 @@
+/* ========================================================= */
+/* Estilos Ajustados para la sección VIERNES NEGRO */
+/* ========================================================= */
+.viernes-negro {
+    background-color: #212529; /* Fondo muy oscuro */
+    color: #ffffff; /* Texto blanco por defecto */
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+
+.viernes-negro-title {
+    color: #ffc107; /* Amarillo */
+    font-size: 5rem; /* Tamaño de fuente grande */
+    font-weight: 900; /* Más bold */
+    line-height: 0.9; /* Interlineado para compactar "VIERNES" y "NEGRO" */
+    margin-bottom: 0.8rem; /* Espacio debajo del título */
+    /* text-align: center; Ya se maneja con la clase de Bootstrap en el HTML */
+}
+
+.ofertas-desc-box {
+    background-color: #000000; /* Negro */
+    padding: 10px 25px; /* Más padding para que se vea más grande */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    display: inline-block; /* Para que el fondo solo abarque el texto */
+    margin-bottom: 1.5rem; /* Espacio debajo de la caja */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+.ofertas-desc-box h2 {
+    color: #ffffff; /* Texto blanco */
+    font-size: 1.8rem; /* Tamaño de fuente para "Ofertas y descuentos" */
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Estilo para el texto "NO DEJES PASAR ESTA OPORTUNIDAD" */
+.viernes-negro .text-white.fs-5 { /* Específico para este párrafo */
+    font-size: 1.6rem !important; /* Aumentamos el tamaño, !important por si Bootstrap tiene uno más fuerte */
+    font-weight: 500; /* Un poco más de peso */
+    margin-bottom: 2rem; /* Más espacio debajo */
+}
+
+.comprar-ahora-btn {
+    background-color: #ff0000; /* Rojo vibrante */
+    border-color: #ff0000;
+    padding: 1.2rem 3.5rem; /* Padding más generoso */
+    font-size: 1.5rem; /* Tamaño de fuente del botón */
+    font-weight: 700;
+    border-radius: 8px; /* Bordes más redondeados (rounded-3 de Bootstrap es 0.3rem, aquí forzamos más) */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.comprar-ahora-btn:hover {
+    background-color: #cc0000; /* Rojo más oscuro al pasar el mouse */
+    border-color: #cc0000;
+}
+
+/* Posicionamiento del icono de porcentaje */
+.porcentaje-icon {
+    width: 120px; /* Tamaño del icono de porcentaje */
+    position: absolute;
+    /* Ajusta estos valores para la posición exacta */
+    bottom: -15px; /* Mueve hacia abajo desde la parte inferior de su contenedor relativo */
+    right: 30px; /* Mueve hacia la derecha desde el lado derecho de su contenedor relativo */
+    transform: rotate(15deg); /* Rotación ligera como en la imagen */
+    z-index: 1; /* Asegura que esté por encima de otros elementos si es necesario */
+}
+
+/* Estilos de las tarjetas de producto */
+.product-card {
+    border: none; /* Sin borde */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+    transition: transform 0.2s ease-in-out;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card .card-body {
+    padding: 1.2rem; /* Padding interno */
+    display: flex;
+    flex-direction: column;
+    /* QUITAMOS text-align: center; y align-items: center; de aquí para permitir alineación izquierda */
+    justify-content: flex-start; /* Alinea el contenido al inicio (arriba) */
+    align-items: flex-start; /* Alinea los ítems al inicio (izquierda) */
+}
+
+.product-card .card-text.text-muted {
+    color: #6c757d !important; /* Gris */
+    text-decoration: line-through;
+    font-size: 0.9rem; /* Tamaño del PVP */
+    margin-bottom: 0.3rem;
+    width: 100%; /* Para que ocupe todo el ancho si queremos text-align: left */
+    text-align: left; /* Alinea el PVP a la izquierda */
+}
+
+.product-card .card-title {
+    font-size: 1.05rem; /* Tamaño del título del producto */
+    color: #343a40;
+    min-height: 48px; /* Altura mínima para asegurar 2 líneas */
+    display: -webkit-box;
+    /*-webkit-line-clamp: 2;*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.8rem; /* Espacio debajo del título */
+    width: 100%; /* Para que ocupe todo el ancho */
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.product-card .product-img-left { /* Nueva clase para alinear a la izquierda */
+    max-height: 140px; /* Altura máxima de la imagen */
+    object-fit: contain;
+    margin-bottom: 0.8rem; /* Espacio debajo de la imagen */
+    width: 100%; /* Asegura que ocupe el ancho disponible */
+    display: block; /* Para poder controlar los márgenes si es necesario */
+    margin-left: 0; /* Asegura que esté a la izquierda */
+    margin-right: auto; /* Permite que el margen derecho empuje a la izquierda */
+}
+
+.offer-box {
+    background-color: #ff0000; /* Rojo */
+    color: #ffffff; /* Texto blanco */
+    padding: 0.6rem 1.2rem; /* Padding de la caja de oferta */
+    border-radius: 8px; /* Bordes más redondeados */
+    margin-top: 0.8rem; /* Espacio superior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    display: flex; /* Asegura el flexbox */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center; /* Centra verticalmente */
+}
+
+.offer-box span {
+    font-weight: bold;
+}
+
+.offer-box span:first-child {
+    font-size: 1.1rem; /* Tamaño para "OFERTA" */
+}
+
+.offer-box span:last-child {
+    font-size: 1.5rem; /* Tamaño para el precio de oferta */
+    white-space: nowrap; /* Evita que el precio se rompa en varias líneas */
+}
+
+/* Media Queries para Viernes Negro */
+@media (max-width: 991.98px) {
+    .viernes-negro-title {
+        font-size: 4rem;
+    }
+    .ofertas-desc-box h2 {
+        font-size: 1.5rem;
+    }
+    .viernes-negro .text-white.fs-5 {
+        font-size: 1.3rem !important;
+    }
+    .comprar-ahora-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 2.5rem;
+    }
+    .porcentaje-icon {
+        position: static; /* Quita el posicionamiento absoluto en móvil */
+        margin-top: 1rem;
+        transform: none; /* Elimina la rotación */
+        display: block; /* Asegura que se muestre como un bloque */
+        margin-left: auto; /* Centra el icono */
+        margin-right: auto; /* Centra el icono */
+        width: 100px; /* Ajusta el tamaño en móvil */
+    }
+}
+@media (max-width: 767.98px) {
+    .viernes-negro-title {
+        font-size: 3rem;
+    }
+    .ofertas-desc-box h2 {
+        font-size: 1.1rem;
+    }
+    .viernes-negro .text-white.fs-5 {
+        font-size: 1.1rem !important;
+    }
+    .comprar-ahora-btn {
+        font-size: 1rem;
+        padding: 0.7rem 2rem;
+    }
+    .product-card .product-img-left { /* Centrar la imagen del producto en móvil */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product-card .card-text.text-muted,
+    .product-card .card-title {
+        text-align: center; /* Centrar texto en tarjetas en móvil si se ve mejor */
+    }
+}
+
+/* ========================================================= */
+/* Estilos para la sección ENCUENTRA EL ELECTRODOMÉSTICO */
+/* ========================================================= */
+.find-appliance-section {
+    /* La imagen de fondo va en la sección principal */
+    background-image: url('https://www.cocinova.com/wp-content/uploads/2020/08/errores-al-usar-los-electrodomesticos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    position: relative; /* Necesario para que el texto-box se posicione correctamente si se quisiera */
+    padding-top: 5rem; /* Padding general de la sección */
+    padding-bottom: 5rem; /* Padding general de la sección */
+    min-height: 400px; /* Altura mínima para que la imagen de fondo se vea bien */
+    
+    /* Para centrar el contenido (el container) vertical y horizontalmente si no ocupa todo el ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el nuevo div que será el cuadro amarillo */
+.find-appliance-section .overlay-yellow-text-box {
+    background-color: rgba(248, 239, 0, 0.75); /* Amarillo de Bootstrap (ffc107) con 85% de opacidad */
+    padding: 3rem 4rem; /* Aumenté el padding interno del cuadro */
+    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    max-width: 1000px; /* Aumenté el ancho máximo del cuadro amarillo */
+    width: 100%; /* El cuadro ocupará hasta el 90% del contenedor padre */
+    margin: 2rem auto; /* Centrar el cuadro amarillo con más margen vertical */
+    text-align: center; /* Centrar el texto dentro del cuadro */
+}
+
+.find-appliance-section h2 {
+    color: #000000; /* Texto oscuro para el título */
+    font-weight: bold;
+    font-size: 1.6rem; /* Ligeramente más grande el título */
+    line-height: 1.2; /* Ajusté la altura de línea del título */
+}
+
+.find-appliance-section p {
+    color: #000000; /* Texto oscuro para el párrafo */
+    font-size: 1.2rem; /* Ligeramente más grande el párrafo */
+
+    max-width: 900px; /* Aumenté el ancho máximo del párrafo dentro del cuadro */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem; /* Añadí un poco de margen inferior al párrafo */
+    text-align: justify;
+}
+
+/* Media Queries para ajuste en dispositivos pequeños */
+@media (max-width: 991.98px) {
+    .find-appliance-section .overlay-yellow-text-box {
+        padding: 2.5rem 3rem;
+        max-width: 800px;
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+    .find-appliance-section h2 {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+    }
+    .find-appliance-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .find-appliance-section .overlay-yellow-text-box {
+        padding: 2rem;
+        border-radius: 5px;
+    }
+    .find-appliance-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .find-appliance-section p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 0.6rem;
+    }
+}
+
+/* ========================================================= */
+/* Estilos para la sección MARCAS ALIADAS */
+/* ========================================================= */
+.allied-brands-section {
+    background-color: #2b2b2b; /* Fondo gris oscuro para la sección principal */
+    color: #ffffff; /* Texto blanco por defecto */
+    padding-top: 6rem; /* Espaciado superior para separación */
+    padding-bottom: 6rem; /* Espaciado inferior para separación */
+    position: relative;
+    overflow: hidden; /* Importante para el carrusel */
+}
+
+.allied-brands-section h2 {
+    color: #ffc107; /* Amarillo para el título */
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
+}
+
+.allied-brands-section p.lead {
+    color: #ffffff; /* Texto blanco para la descripción */
+    font-size: 1.3rem;
+    margin-bottom: 3rem; /* Espacio debajo de la descripción antes del carrusel */
+}
+
+.brands-carousel-container {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    overflow: hidden; /* Oculta los logos que están fuera del contenedor */
+    position: relative;
+    padding: 25px 0; /* Espacio vertical para los logos dentro de la barra */
+    background-color: #0a6e66; /* ¡Fondo verde/teal oscuro para la barra del carrusel! */
+    /* Eliminé border-radius y box-shadow para un look más plano como en la imagen */
+    margin-top: 2rem; /* Margen superior para separarlo del párrafo */
+}
+
+.brands-carousel {
+    display: flex; /* Mantiene los logos en una línea */
+    gap: 50px; /* Ajusté el espacio entre los logos */
+    animation: scrollBrands 40s linear infinite; /* Duración de la animación */
+    animation-play-state: running; /* Inicia la animación automáticamente */
+    min-width: fit-content; /* Asegura que el contenedor tenga suficiente ancho para todos los logos */
+    padding-left: 30px; /* Padding al inicio para que no empiecen pegados al borde */
+    padding-right: 30px; /* Padding al final */
+}
+
+.brands-carousel-container:hover .brands-carousel {
+    animation-play-state: paused; /* Pausa la animación al pasar el mouse */
+}
+
+.brand-item {
+    flex-shrink: 0; /* Evita que los logos se encojan */
+    width: 140px; /* Ajusté el ancho fijo para cada logo */
+    height: 90px; /* Ajusté el alto fijo para cada logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%) opacity(0.5); /* Logos en blanco y negro y semitransparentes */
+    transition: filter 0.4s ease;
+}
+
+.brand-item:hover {
+    filter: grayscale(0%) opacity(1); /* Color original y opacidad completa al pasar el mouse */
+}
+
+.brand-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Keyframes para la animación de desplazamiento */
+@keyframes scrollBrands {
+    from {
+        transform: translateX(0);
+    }
+    /* Calculamos el desplazamiento para 6 logos únicos + 5 gaps */
+    /* (6 * 140px) + (5 * 50px) = 840px + 250px = 1090px */
+    to {
+        transform: translateX(-1090px); /* Mueve la distancia total de un set de logos */
+    }
+}
+
+/* Media Queries para la sección de marcas aliadas */
+@media (max-width: 767.98px) {
+    .allied-brands-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .allied-brands-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .allied-brands-section p.lead {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .brands-carousel-container {
+        padding: 15px 0;
+        margin-top: 1.5rem;
+    }
+    .brands-carousel {
+        gap: 30px; /* Menos espacio en pantallas pequeñas */
+        animation-duration: 30s; /* Animación más rápida en pantallas pequeñas */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .brand-item {
+        width: 100px; /* Reduce el tamaño de los logos en móviles */
+        height: 70px;
+    }
+    @keyframes scrollBrands {
+        /* Recalculamos para 6 logos * 100px + 5 gaps * 30px = 600px + 150px = 750px */
+        to {
+            transform: translateX(-750px); /* Ajusta el transform para el nuevo gap en móviles */
+        }
+    }
+}
