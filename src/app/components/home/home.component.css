@@ -2,7 +2,7 @@
 /* Estilos Ajustados para la sección VIERNES NEGRO */
 /* ========================================================= */
 .viernes-negro {
-    background-color: #EAE8F0; /* Fondo muy oscuro */
+    background-color: #EEE6E1; /* Fondo muy palido */
     color: #ffffff; /* Texto blanco por defecto */
     padding-top: 3rem;
     padding-bottom: 4rem;
@@ -287,7 +287,7 @@
 /* Estilos para la sección MARCAS ALIADAS */
 /* ========================================================= */
 .allied-brands-section {
-    background-color: #EAE8F0; /* Fondo gris oscuro para la sección principal */
+    background-color: #EEE6E1; /* Fondo gris oscuro para la sección principal */
     color: #2b2b2b; /* Texto blanco por defecto */
     padding-top: 6rem; /* Espaciado superior para separación */
     padding-bottom: 6rem; /* Espaciado inferior para separación */
