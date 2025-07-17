@@ -57,7 +57,7 @@
 }
 
 .login-form button {
-  background-color: #686BC4;
+  background-color: #7a6781;
   color: white;
   border: none;
   padding: 0.75rem 2rem;
@@ -68,7 +68,7 @@
 }
 
 .login-form button:hover {
-  background-color: #5800a1;
+  background-color: #7a6781;
 }
 
 @media (max-width: 600px) {

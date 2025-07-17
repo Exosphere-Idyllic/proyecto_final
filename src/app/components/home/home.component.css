@@ -2,7 +2,7 @@
 /* Estilos Ajustados para la sección VIERNES NEGRO */
 /* ========================================================= */
 .viernes-negro {
-    background-color: #212529; /* Fondo muy oscuro */
+    background-color: #EAE8F0; /* Fondo muy oscuro */
     color: #ffffff; /* Texto blanco por defecto */
     padding-top: 3rem;
     padding-bottom: 4rem;
@@ -19,7 +19,7 @@
 }
 
 .ofertas-desc-box {
-    background-color: #000000; /* Negro */
+    background-color: #686BC4; /* Negro */
     padding: 10px 25px; /* Más padding para que se vea más grande */
     border-radius: 5px; /* Bordes ligeramente redondeados */
     display: inline-block; /* Para que el fondo solo abarque el texto */
@@ -28,7 +28,7 @@
 }
 
 .ofertas-desc-box h2 {
-    color: #ffffff; /* Texto blanco */
+    color: #EAE8F0; /* Texto blanco */
     font-size: 1.8rem; /* Tamaño de fuente para "Ofertas y descuentos" */
     font-weight: 700;
     margin-bottom: 0;
@@ -37,6 +37,7 @@
 /* Estilo para el texto "NO DEJES PASAR ESTA OPORTUNIDAD" */
 .viernes-negro .text-white.fs-5 { /* Específico para este párrafo */
     font-size: 1.6rem !important; /* Aumentamos el tamaño, !important por si Bootstrap tiene uno más fuerte */
+    color: #EAE8F0 !important;
     font-weight: 500; /* Un poco más de peso */
     margin-bottom: 2rem; /* Más espacio debajo */
 }
@@ -219,7 +220,7 @@
 
 /* Estilos para el nuevo div que será el cuadro amarillo */
 .find-appliance-section .overlay-yellow-text-box {
-    background-color: rgba(248, 239, 0, 0.75); /* Amarillo de Bootstrap (ffc107) con 85% de opacidad */
+    background-color: rgba(234, 232, 240, 0.75); /* Amarillo de Bootstrap (ffc107) con 85% de opacidad */
     padding: 3rem 4rem; /* Aumenté el padding interno del cuadro */
     
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
@@ -230,14 +231,14 @@
 }
 
 .find-appliance-section h2 {
-    color: #000000; /* Texto oscuro para el título */
+    color: #2b2b2b; /* Texto oscuro para el título */
     font-weight: bold;
     font-size: 1.6rem; /* Ligeramente más grande el título */
     line-height: 1.2; /* Ajusté la altura de línea del título */
 }
 
 .find-appliance-section p {
-    color: #000000; /* Texto oscuro para el párrafo */
+    color: #2b2b2b; /* Texto oscuro para el párrafo */
     font-size: 1.2rem; /* Ligeramente más grande el párrafo */
 
     max-width: 900px; /* Aumenté el ancho máximo del párrafo dentro del cuadro */
@@ -286,8 +287,8 @@
 /* Estilos para la sección MARCAS ALIADAS */
 /* ========================================================= */
 .allied-brands-section {
-    background-color: #2b2b2b; /* Fondo gris oscuro para la sección principal */
-    color: #ffffff; /* Texto blanco por defecto */
+    background-color: #EAE8F0; /* Fondo gris oscuro para la sección principal */
+    color: #2b2b2b; /* Texto blanco por defecto */
     padding-top: 6rem; /* Espaciado superior para separación */
     padding-bottom: 6rem; /* Espaciado inferior para separación */
     position: relative;
@@ -295,14 +296,14 @@
 }
 
 .allied-brands-section h2 {
-    color: #ffc107; /* Amarillo para el título */
+    color: #FFC107; /* Amarillo para el título */
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem; /* Espacio debajo del título */
 }
 
 .allied-brands-section p.lead {
-    color: #ffffff; /* Texto blanco para la descripción */
+    color: #2b2b2b; /* Texto blanco para la descripción */
     font-size: 1.3rem;
     margin-bottom: 3rem; /* Espacio debajo de la descripción antes del carrusel */
 }
@@ -312,7 +313,7 @@
     overflow: hidden; /* Oculta los logos que están fuera del contenedor */
     position: relative;
     padding: 25px 0; /* Espacio vertical para los logos dentro de la barra */
-    background-color: #4B2C87; /* ¡Fondo verde/teal oscuro para la barra del carrusel! */
+    background-color: #686BC4; /* ¡Fondo verde/teal oscuro para la barra del carrusel! */
     /* Eliminé border-radius y box-shadow para un look más plano como en la imagen */
     margin-top: 2rem; /* Margen superior para separarlo del párrafo */
 }

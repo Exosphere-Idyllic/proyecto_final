@@ -7,6 +7,7 @@ import { OffersComponent } from './components/offers/offers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { LoginComponent } from './components/login/login.component';
+import { ErrorComponent } from './components/error/error.component';
 
 export const routes: Routes = [
     { path: 'footer', component: FooterComponent},
@@ -16,5 +17,6 @@ export const routes: Routes = [
     { path: 'offers', component: OffersComponent},
     { path: 'contact', component: ContactComponent},
     { path: 'products', component: ProductsComponent},
-    { path: 'login', component: LoginComponent}
+    { path: 'login', component: LoginComponent},
+    { path: 'error', component:ErrorComponent}
 ];

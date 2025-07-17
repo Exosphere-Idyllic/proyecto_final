@@ -1,0 +1,6 @@
+---color---
+EAE8F0 - Fondos
+94ADC9 - detalles
+686BC4 - botones
+8584AF - complementario al de botones
+394170 - footer
